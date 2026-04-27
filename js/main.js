@@ -409,30 +409,33 @@ const animateCounters = () => {
 // 7. Active Nav Indicator
 // ==========================================
 const initActiveNav = () => {
-    const currentPath = window.location.pathname;
+    const path = window.location.pathname;
+    // Handle root path or folder paths by defaulting to index.html
+    const page = path.split("/").pop() || 'index.html';
     const navLinks = document.querySelectorAll('nav a');
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (!href) return;
 
-        // Reset classes
-        link.classList.remove('text-yellow-400', 'font-bold');
+        // Clean up current filename from the link href (handles ../index.html or pages/services.html)
+        const linkPage = href.split("/").pop();
+
+        // Reset classes first
+        link.classList.remove('text-yellow-400', 'font-bold', 'border-b-2', 'border-yellow-400', 'pb-1');
         if (link.closest('#mobile-menu')) {
+            link.classList.remove('text-yellow-400');
             link.classList.add('text-gray-300');
         } else {
             link.classList.add('text-gray-400');
         }
 
-        // Check if link matches current path
-        const isHome = currentPath === '/' || currentPath.endsWith('index.html');
-        const linkMatches = href.includes(currentPath.split('/').pop());
-
-        if ((isHome && href.includes('index.html')) || (!isHome && linkMatches && !href.includes('index.html'))) {
+        // Check for match
+        if (page === linkPage) {
             link.classList.add('text-yellow-400', 'font-bold');
             link.classList.remove('text-gray-400', 'text-gray-300');
             
-            // Add a subtle underline for desktop
+            // Add underline for desktop nav
             if (!link.closest('#mobile-menu')) {
                 link.classList.add('border-b-2', 'border-yellow-400', 'pb-1');
             }
