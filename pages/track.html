@@ -64,13 +64,16 @@
 </nav>
 
   <!-- TRACKING HERO -->
-  <section class="py-16 bg-[#0a0a0a] border-b border-[#2a2a2a] flex-grow">
-    <div class="max-w-3xl mx-auto px-4 text-center mt-10 mb-12">
-      <h1 class="text-4xl font-extrabold text-white mb-4">Track Your <span class="text-yellow-400">Service</span></h1>
-      <p class="text-gray-400">Enter your Booking ID or Phone Number below to see the real-time status of your vehicle.</p>
-    </div>
+<section class="relative py-24 bg-[#0a0a0a] border-b border-[#2a2a2a] overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-yellow-400/5 via-transparent to-transparent"></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-4 text-center mt-10">
+    <h2 class="text-yellow-400 font-bold tracking-wide uppercase text-sm mb-2">Service Status</h2>
+    <h1 class="text-5xl font-extrabold text-white mb-6">Track Your <span class="text-yellow-400">Service</span></h1>
+    <p class="text-gray-400 text-lg">Enter your Booking ID or Phone Number below to see the real-time status of your vehicle. Stay updated at every stage.</p>
+  </div>
+</section>
 
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
       <div class="bg-[#1a1a1a] p-8 rounded-2xl border border-[#2a2a2a] shadow-2xl">
         
         <!-- Search Form -->
@@ -154,7 +157,89 @@
 
       </div>
     </div>
-  </section>
+  <!-- TRACKING BENEFITS -->
+<section class="py-24 bg-[#0f0f0f]">
+  <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="text-center fade-in">
+        <div class="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-400">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-3">Real-Time Updates</h4>
+        <p class="text-gray-500 text-sm">Know exactly where your car is in the repair process, from check-in to final testing.</p>
+      </div>
+      <div class="text-center fade-in" style="transition-delay: 100ms">
+        <div class="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-400">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-3">Instant Notifications</h4>
+        <p class="text-gray-500 text-sm">Receive SMS or Email alerts as soon as your vehicle transitions to the next service stage.</p>
+      </div>
+      <div class="text-center fade-in" style="transition-delay: 200ms">
+        <div class="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-400">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-3">Transparent History</h4>
+        <p class="text-gray-500 text-sm">Access your full service history and digital inspection reports at any time from your account.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOBILE APP CTA -->
+<section class="py-24 bg-[#111111] border-y border-[#2a2a2a]">
+  <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-br from-[#1a1a1a] to-black rounded-[3rem] p-12 lg:p-20 border border-[#2a2a2a] flex flex-col lg:flex-row items-center gap-16">
+      <div class="lg:w-1/2 fade-in">
+        <h3 class="text-4xl font-extrabold text-white mb-6">Service Tracking on the Go</h3>
+        <p class="text-gray-400 text-lg mb-10">Download the AutoCare mobile app for the most seamless tracking experience. Get push notifications, book appointments with one tap, and manage your vehicle health profile.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:bg-yellow-400 transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.341c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm2.004-4.004c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm-4.008-4.008c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm-4.004 0c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm-4.004 0c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm-4.004 4.008c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm0 4.004c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm4.004 4.004c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm4.004 0c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002zm4.004 0c-.551 0-1.002.451-1.002 1.002s.451 1.002 1.002 1.002 1.002-.451 1.002-1.002-.451-1.002-1.002-1.002z"/></svg>
+            App Store
+          </a>
+          <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer" class="bg-[#2a2a2a] text-white px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:bg-[#3a3a3a] transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.609 22.186c-.18.18-.329.13-.329-.125V1.939c0-.255.149-.305.329-.125zM14.716 12.925l-2.483-2.483-1.859 1.859 1.859 1.859 2.483-1.235zm-5.044-3.178l1.859-1.859-1.859-1.859-2.483 1.235 2.483 2.483zM15.42 12.711l3.536-1.761c.465-.231.465-.609 0-.841l-3.536-1.761-1.129 1.129 1.129 1.129z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 flex justify-center fade-in">
+        <!-- Placeholder for Mobile Mockup -->
+        <div class="relative w-64 h-[500px] bg-black rounded-[3rem] border-8 border-[#2a2a2a] shadow-2xl overflow-hidden">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-[#2a2a2a] rounded-b-2xl"></div>
+          <div class="p-6 mt-8">
+            <div class="w-full h-4 bg-[#2a2a2a] rounded mb-4"></div>
+            <div class="w-3/4 h-4 bg-[#2a2a2a] rounded mb-8"></div>
+            <div class="space-y-4">
+              <div class="w-full h-20 bg-yellow-400/10 rounded-xl border border-yellow-400/20"></div>
+              <div class="w-full h-20 bg-[#1a1a1a] rounded-xl"></div>
+              <div class="w-full h-20 bg-[#1a1a1a] rounded-xl"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKING SUPPORT -->
+<section class="py-24 bg-[#0f0f0f]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h3 class="text-3xl font-extrabold text-white mb-6">Issue with your status?</h3>
+    <p class="text-gray-400 mb-10">If you believe your tracking information is incorrect or you've lost your Booking ID, please contact our service desk immediately.</p>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="tel:+1555000TRACK" class="flex items-center gap-3 bg-[#1a1a1a] px-6 py-4 rounded-2xl border border-[#2a2a2a] hover:border-yellow-400 transition-colors group">
+        <svg class="w-5 h-5 text-yellow-400 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <span class="text-white font-bold">+1 (555) 000-TRACK</span>
+      </a>
+      <a href="mailto:support@autocare.com" class="flex items-center gap-3 bg-[#1a1a1a] px-6 py-4 rounded-2xl border border-[#2a2a2a] hover:border-yellow-400 transition-colors group">
+        <svg class="w-5 h-5 text-yellow-400 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span class="text-white font-bold">support@autocare.com</span>
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-[#1a1a1a] border-t border-[#2a2a2a] pt-16 pb-8 mt-20">

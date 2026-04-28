@@ -444,7 +444,29 @@ const initActiveNav = () => {
 };
 
 // ==========================================
-// 8. Global Initialization
+// 8. FAQ Toggle Logic
+// ==========================================
+window.toggleFAQ = (btn) => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('svg');
+    const allFaqs = document.querySelectorAll('.faq-content');
+    const allIcons = document.querySelectorAll('.faq-icon');
+
+    // Close others
+    allFaqs.forEach((faq, i) => {
+        if (faq !== content) {
+            faq.classList.add('hidden');
+            allIcons[i].classList.remove('rotate-180');
+        }
+    });
+
+    // Toggle current
+    content.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+};
+
+// ==========================================
+// 9. Global Initialization
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
